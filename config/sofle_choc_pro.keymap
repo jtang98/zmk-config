@@ -111,7 +111,7 @@
       // |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
       // |       |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
       //               |     |      |      |      |        |  |       |      |       |       |      |
-      bindings = bindings = <
+      bindings = <
         &trans       
         &none        
         &none        
@@ -259,7 +259,7 @@
       // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
       //                    |         |         |         |         |         | |      |      |      |       |      |
       display-name = "adjust";
-bindings = <
+      bindings = <
         &bt          
         &bt 3        
         &bt 3 1      
