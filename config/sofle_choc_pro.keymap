@@ -17,6 +17,21 @@
 
 / {
 
+  macros {
+    altgr: altgr {
+      compatible = "zmk,behavior-macro-one-param";
+      #binding-cells = <1>;
+      wait-ms = <15>;
+      tap-ms = <15>;
+      bindings
+        = <&macro_press &kp RALT>
+        , <&macro_param_1to1>
+        , <&macro_tap &kp MACRO_PLACEHOLDER>
+        , <&macro_release &kp RALT>
+        ;
+    };
+  };
+
   // Activate ADJUST layer by pressing raise and lower
   conditional_layers {
     compatible = "zmk,conditional-layers";
@@ -141,8 +156,8 @@
         &kp F6       
         &kp F7       
         &kp F8       
-        &kp RA(N5)   
-        &kp RA(MINUS)
+        &altgr N5   
+        &altgr MINUS
         &none        
         &none        
         &none        
@@ -153,10 +168,10 @@
         &kp F2       
         &kp F3       
         &kp F4       
-        &kp RA(N4)   
+        &altgr N4   
         &trans       
         &trans       
-        &kp RA(EQUAL)
+        &altgr EQUAL
         &none        
         &none        
         &none        
